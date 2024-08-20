@@ -9,3 +9,12 @@ Highlevel Approch (subject to change without notice)
 
 ### Data Set
 https://data.galaxyzoo.org/
+
+### Requirements
+
+Install `galaxy-datasets` and run `datasets_util.py` to have required resources downloaded for use.
+
+```sh
+pip install galaxy-datasets
+python datasets_util.py
+```
