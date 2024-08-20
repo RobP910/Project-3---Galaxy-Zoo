@@ -8,9 +8,8 @@ Running this as a script will handle all required downloads.
 # https://pypi.org/project/galaxy-datasets/
 
 import os
-from galaxy_datasets import demo_rings
+from galaxy_datasets import gz2
 
-# TODO demo_rings is a small dataset, determine dataset(s) we want
 
 RESOURCES_DIR = "Resources"
 """The directory to hold all downloaded resources."""
@@ -19,11 +18,11 @@ RESOURCES_DIR = "Resources"
 def download_resources():
     """Download required resources so galaxy datasets can be used."""
     # the whole dataset downloads regardless of train flag
-    demo_rings(os.path.join(RESOURCES_DIR, "demo_rings"), False, True)
+    gz2(os.path.join(RESOURCES_DIR, "gz2"), False, True)
 
 
-def get_demo_rings(train: bool = False):
-    """Get demo rings dataset.
+def get_gz2(train: bool = False):
+    """Get the Galaxy Zoo 2 dataset.
 
     Args:
         train: A flag to control if the training or testing catalog should be
@@ -34,7 +33,7 @@ def get_demo_rings(train: bool = False):
         column of absolute image paths) and a list of column names to use as
         labels.
     """
-    return demo_rings(os.path.join(RESOURCES_DIR, "demo_rings"), train, False)
+    return gz2(os.path.join(RESOURCES_DIR, "gz2"), train, False)
 
 
 if __name__ == "__main__":
