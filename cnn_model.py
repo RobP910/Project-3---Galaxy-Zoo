@@ -45,6 +45,3 @@ def create_cnn_model(input_shape, num_classes, c_layers, filters, d_layers, d_un
                   metrics=['accuracy'])
     
     return model
-
-# Model summary
-model.summary()
