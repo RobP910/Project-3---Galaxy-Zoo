@@ -1,7 +1,15 @@
 import tensorflow as tf
 from tensorflow.keras import layers, models
 
-def create_cnn_model(input_shape, num_classes, c_layers, filters, d_layers, d_units, dropout_rate):
+def create_cnn_model(
+    input_shape,
+    num_classes,
+    c_layers=3,
+    filters=32,
+    d_layers=1,
+    d_units=128,
+    dropout_rate=0.5
+):
     """
     Create CNN model for image classification.
     
