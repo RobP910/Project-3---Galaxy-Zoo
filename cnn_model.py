@@ -53,6 +53,3 @@ def create_cnn_model(
                   metrics=['accuracy'])
     
     return model
-
-# Model summary
-model.summary()
