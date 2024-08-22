@@ -4,7 +4,7 @@
 ## Overview
 This project aims to assist in the manual classification of galaxy images by developing a robust image classification model. The goal is to streamline and enhance the process of analyzing galaxy images, galaxies as belonging to one of six categories, reducing the reliance on manual classification methods. It is not intended to 100% replace human classifiers, instead we hope to quickly weed out images that have artifacts preventing classification and allow humans to focus on those images that need human interpretation.
 
-![Galaxy Image Classification](./Resources/Project_3_Tasks.JPG)
+![Galaxy Image Classification](./README_images/Project_3_Tasks.JPG)
 
 ## Data
 The dataset utilized for this project is sourced from [Galaxy Zoo](https://data.galaxyzoo.org/) 2, a large-scale citizen science project that provides extensive galaxy images for classification purposes.
