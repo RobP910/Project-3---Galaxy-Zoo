@@ -1,0 +1,6 @@
+# Ignore most content, except specified files
+# - model resources save to here, which is too much to be worth tracking in git
+*
+
+# - add filepaths with `!` prefix here to explicitly track files
+!.gitignore
