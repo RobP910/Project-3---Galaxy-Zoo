@@ -14,7 +14,7 @@ To get started with the project, ensure you have the necessary resources by foll
 
 1. Install the required package:
     ```sh
-    pip install galaxy-datasets
+    pip install galaxy-datasets[tensorflow]
     ```
 
 2. Run the dataset utility script to download the necessary data:
