@@ -17,10 +17,25 @@ To get started with the project, ensure you have the necessary resources by foll
     pip install galaxy-datasets[tensorflow]
     ```
 
-2. Run the dataset utility script to download the necessary data:
+1.a Install separately if the above install fails
+    ```sh
+    pip install galaxy-datasets
+    pip install tensorflow
+    ```
+
+2. Install numpy, matplotlib, & pillow
+    ```sh
+    pip install numpy
+    pip install matplotlib
+    pip install pillow
+    ```
+
+3. Run the dataset utility script to download the necessary data:
     ```sh
     python datasets_util.py
     ```
+
+Once installed and running, you can add new images to '/Resources/new_images/' and see how well the images get categorized.
 
 ## Acknowledgements
 The images used in this project are intended to complement the data tables available at [Galaxy Zoo](https://data.galaxyzoo.org/). These images are part of the original sample of subject images in Galaxy Zoo 2 (Willett et al. 2013, MNRAS, 435, 2835, DOI: [10.1093/mnras/stt1458](https://doi.org/10.1093/mnras/stt1458)), as identified in Table 1 of Willett et al., and also referenced in Hart et al. (2016, MNRAS, 461, 3663, DOI: [10.1093/mnras/stw1588](https://doi.org/10.1093/mnras/stw1588)). Please note that while the original GZ2 subjects provided an option to view an inverted version of the subject image, these inverted images are not included but can be easily recreated from the provided images.
