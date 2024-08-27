@@ -13,12 +13,9 @@ The dataset utilized for this project is sourced from [Galaxy Zoo](https://data.
 ## <p style="color:rgb(70, 100, 200);">Installation and Setup</p>
 To get started with the project, ensure you have the necessary resources by following these steps:
 
-Install the required package via the requirements.txt:
+1. Install the required package via the requirements.txt:
     ```sh
     pip install -r requirements.txt
     ```
-
-Once installed and running, you can add new images to '/Resources/new_images/' and see how well the images get categorized.
-
 ## <p style="color:orange;">Acknowledgements</p>
 The images used in this project came from [Galaxy Zoo](https://data.galaxyzoo.org/). These images are part of the original sample of subject images in Galaxy Zoo 2 (Willett et al. 2013, MNRAS, 435, 2835, DOI: [10.1093/mnras/stt1458](https://doi.org/10.1093/mnras/stt1458)), as identified in Table 1 of Willett et al., and also referenced in Hart et al. (2016, MNRAS, 461, 3663, DOI: [10.1093/mnras/stw1588](https://doi.org/10.1093/mnras/stw1588)).
