@@ -25,6 +25,19 @@ def get_summary_encoder(train_catalog: pd.DataFrame):
     )
 
 
+def get_summary_enc(encoder: OneHotEncoder, catalog: pd.DataFrame):
+    """Get encoding of summary column from catalog.
+
+    Args:
+        encoder: A OneHotEncoder for summary data.
+        catalog: the catalog holding the summary column.
+
+    Returns:
+        Encoded summary data.
+    """
+    return encoder.transform(_reshape_series(catalog["summary"]))
+
+
 def get_train_test_summary_enc(
     encoder: OneHotEncoder, train_catalog: pd.DataFrame, test_catalog: pd.DataFrame
 ):
@@ -38,6 +51,4 @@ def get_train_test_summary_enc(
     Returns:
         A tuple of the encoded summary data for training and testing.
     """
-    return encoder.transform(
-        _reshape_series(train_catalog["summary"])
-    ), encoder.transform(_reshape_series(test_catalog["summary"]))
+    return get_summary_enc(train_catalog), get_summary_enc(test_catalog)
