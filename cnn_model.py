@@ -13,17 +13,17 @@ def create_cnn_model(
     """
     Create CNN model for image classification.
     
-    Parameters:
-    - input_shape: tuple, shape of the input images (height, width, channels)
-    - num_classes: int, number of classes for classification
-    - c_layers: int, number of convolutional layers (default = 3)
-    - filters: int, number of filters in the first convolutional layer (default = 32)
-    - d_layers: int, number of dense layers after convolutional layers (default = 1)
-    - d_units: int, number of units in each dense layer (default = 128)
-    - dropout_rate: float, dropout rate applied after dense layers (default = 0.5)
+    Args:
+        input_shape (tuple): shape of the input images (height, width, channels)
+        num_classes (int): number of classes for classification
+        c_layers (int): number of convolutional layers (default = 3)
+        filters (int): number of filters in the first convolutional layer (default = 32)
+        d_layers (int): number of dense layers after convolutional layers (default = 1)
+        d_units (int): number of units in each dense layer (default = 128)
+        dropout_rate (float): dropout rate applied after dense layers (default = 0.5)
     
     Returns:
-    - model: tf.keras.Model, the CNN model
+        model (tf.keras.Model): the CNN model
     """
     
     model = models.Sequential()
