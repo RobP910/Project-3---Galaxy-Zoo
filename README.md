@@ -17,5 +17,9 @@ To get started with the project, ensure you have the necessary resources by foll
     ```sh
     pip install -r requirements.txt
     ```
+2. Run the dataset utility script to download the necessary data: 
+   ```sh
+    python datasets_util.py
+    ```
 ## <p style="color:orange;">Acknowledgements</p>
 The images used in this project came from [Galaxy Zoo](https://data.galaxyzoo.org/). These images are part of the original sample of subject images in Galaxy Zoo 2 (Willett et al. 2013, MNRAS, 435, 2835, DOI: [10.1093/mnras/stt1458](https://doi.org/10.1093/mnras/stt1458)), as identified in Table 1 of Willett et al., and also referenced in Hart et al. (2016, MNRAS, 461, 3663, DOI: [10.1093/mnras/stw1588](https://doi.org/10.1093/mnras/stw1588)).
