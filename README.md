@@ -10,6 +10,9 @@ This classroom project aims to assist in the manual classification of galaxy ima
 ## Data
 The dataset utilized for this project is sourced from [Galaxy Zoo](https://data.galaxyzoo.org/) 2, a large-scale citizen science project that provides extensive galaxy images for classification purposes.
 
+## Results
+The model effectively distinguishes between different types of galaxies, demonstrating relatively high multi-class accuracy of 75% and potential for further application in astronomical image analysis.
+
 ## <p style="color:rgb(70, 100, 200);">Installation and Setup</p>
 To get started with the project, ensure you have the necessary resources by following these steps:
 
